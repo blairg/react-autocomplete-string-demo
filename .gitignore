@@ -1,0 +1,11 @@
+# Git uses this file to determine which files and directories to ignore
+# https://help.github.com/articles/ignoring-files
+
+node_modules/gulp-watch-less/node_modules/less/.idea
+.DS_Store
+<<<<<<< HEAD
+coverage
+node_modules
+npm-debug.log
+.vscode
+distribution
