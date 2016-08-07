@@ -34,6 +34,7 @@
     "babel-eslint": "^6.0.0",
     "babel-jest": "^10.0.1",
     "babel-polyfill": "^6.7.4",
+    "babel-preset-stage-0": "^6.5.0",
     "babelify": "^7.2.0",
     "browser-sync": "^2.13.0",
     "eslint": "^2.2.0",

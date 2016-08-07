@@ -20,7 +20,7 @@ class SearchAnywhere extends React.Component {
 
 class BeginsWith extends React.Component {
   render() {
-    return <AutoComplete values={cities} numresults={20} search={'startswith'} casesensitive={false}
+    return <AutoComplete values={cities} numresults={10} search={'startswith'} casesensitive={false} minimumkeystrokes={2}
                          placeholder={'City name begins with...'} />;
   }
 }

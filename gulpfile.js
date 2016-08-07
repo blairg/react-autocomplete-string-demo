@@ -33,7 +33,7 @@ const paths = {
   app_js:   ['./assets/js/src/components/app.jsx'],
   js_src:   ['./assets/js/src/'],
   js:       ['./assets/js/src/**/*.j*'],
-  vendor:   ['./assets/js/src/vendor/typed.min.js'],
+  vendor:   ['./assets/js/src/vendor/typed.js'],
   demo:     ['./assets/js/src/components/demo.js']
 };
 
@@ -68,8 +68,9 @@ gulp.task('injectcss', function() {
 
 // Our JS task. It will Browserify our code and compile React JSX files.
 gulp.task('js', function() {
+
   return browserify([paths.vendor, paths.demo, paths.app_js])
-         .transform('babelify', {presets: ['es2015', 'react']})
+         .transform('babelify', {presets: ['es2015', 'stage-0', 'react']})
          .bundle()
          .pipe(source('bundle.js'))
          .pipe(gulp.dest('./build/js/'));
